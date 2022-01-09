@@ -1,7 +1,6 @@
 ## Simple Shapes Ext
 
 > ### Info
-- Name: Liangying Huang <br>
 - Heroku app url: https://lh49-hw2-shapes.herokuapp.com/ <br>
 
 > ### Design Decision Report
