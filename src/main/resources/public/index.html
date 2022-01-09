@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shapes</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/view.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Shape World!</h1>
+    <p>In here, you can create different types of shape with various colors on the canvas.
+        <br> If you want to clear all the shapes, just click "clear".
+    </p>
+
+    <div class="hi">
+        <h3><span style="color:#ff0000;">E</span><span style="color:#ffbf00;">N</span><span style="color:#80ff00;">J</span><span style="color:#00ff40;">O</span><span style="color:#00ffff;">Y&nbsp;</span></span><span><span style="color:#0040ff;">I</span><span style="color:#7f00ff;">T</span><span style="color:#ff00bf;">!</span></h3>
+    </div>
+
+    <div>
+        <span> Select shape type you want to add!</span>
+        <select id="shapeSelect">
+            <option selected>Shape</option>
+            <optgroup label="Basic shape">
+                <option value="circle">Circle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="rhombus">Rhombus</option>
+            </optgroup>
+
+            <optgroup label="Polygon">
+                <option value="polygon3">Triangle</option>
+                <option value="polygon4">Square</option>
+                <option value="polygon5">Pentagon</option>
+                <option value="polygon6">Hexagon</option>
+                <option value="polygon7">Heptagon</option>
+                <option value="polygon8">Octagon</option>
+            </optgroup>
+
+            <optgroup label="Composite">
+                <option value="hollow">Hollow</option>
+                <option value="hexagram">Hexagram</option>
+            </optgroup>
+
+
+
+        </select>
+        <div>
+            <span> Select two shapes type to make a hollow shape</span>
+            <select id="hollowBase" disabled>
+                <option value="circle" selected>Select shape one (default: circle)</option>
+
+                <option value="circle">Circle</option>
+                <option value="hexagram">Hexagram</option>
+
+                <optgroup label="Polygon">
+                    <option value="polygon3">Triangle</option>
+                    <option value="polygon4">Square</option>
+                    <option value="polygon5">Pentagon</option>
+                    <option value="polygon6">Hexagon</option>
+                    <option value="polygon7">Heptagon</option>
+                    <option value="polygon8">Octagon</option>
+                </optgroup>
+            </select>
+
+            <select id="hollowTop" disabled>
+                <option value="circle">Select shape two (default: circle)</option>
+                <option value="circle">Circle</option>
+                <option value="hexagram">Hexagram</option>
+                <optgroup label="Polygon">
+                    <option value="polygon3">Triangle</option>
+                    <option value="polygon4">Square</option>
+                    <option value="polygon5">Pentagon</option>
+                    <option value="polygon6">Hexagon</option>
+                    <option value="polygon7">Heptagon</option>
+                    <option value="polygon8">Octagon</option>
+                </optgroup>
+            </select>
+        </div>
+
+        </div>
+        <span>Add shape or clear the canvas</span>
+        <span><button id="btn-add">Add Shape</button></span>
+        <span><button id="btn-clear">Clear</button></span>
+        <br>
+        <canvas style="border: 1px solid black;" width="800" height="800"></canvas>
+    </div>
+</body>
+</html>
